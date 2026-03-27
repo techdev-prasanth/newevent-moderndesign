@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-luxury-black text-white font-sans;
+  font-weight: 400;
+}
+
+/* Premium Typography */
+h1 {
+  @apply font-serif text-h1 font-bold tracking-tight;
+}
+
+h2 {
+  @apply font-serif text-h2 font-semibold tracking-tight;
+}
+
+h3 {
+  @apply font-serif text-h3 font-semibold tracking-tight;
+}
+
+p {
+  @apply text-body leading-relaxed;
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  @apply bg-wedding-gold text-luxury-black px-8 py-4 rounded font-semibold transition-all duration-300 hover:shadow-lg hover:brightness-110 cursor-pointer;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-wedding-gold text-wedding-gold px-8 py-4 rounded font-semibold transition-all duration-300 hover:bg-wedding-gold hover:text-luxury-black;
+}
+
+.btn-white {
+  @apply bg-white text-luxury-black px-8 py-4 rounded font-semibold transition-all duration-300 hover:shadow-lg;
+}
+
+.btn-ghost {
+  @apply bg-transparent text-white border border-white/20 px-8 py-4 rounded font-semibold transition-all duration-300 hover:border-wedding-gold hover:text-wedding-gold;
+}
+
+/* Gold Divider / Kolam Pattern */
+.kolam-divider {
+  @apply h-1 bg-gradient-to-r from-transparent via-wedding-gold to-transparent my-8;
+}
+
+.kolam-accent {
+  @apply w-2 h-2 bg-wedding-gold rounded-full;
+}
+
+/* Luxury Card Styles */
+.card-luxury {
+  @apply bg-luxury-charcoal border border-white/10 rounded overflow-hidden backdrop-blur-sm transition-all duration-300 hover:border-wedding-gold/30 hover:shadow-lg;
+}
+
+.card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-luxury-black via-transparent to-transparent pointer-events-none;
+}
+
+/* Gradient Text */
+.gradient-gold {
+  @apply bg-gradient-to-r from-wedding-gold to-wedding-copper bg-clip-text text-transparent;
+}
+
+.gradient-maroon {
+  @apply bg-gradient-to-r from-wedding-maroon to-wedding-rose bg-clip-text text-transparent;
+}
+
+/* Premium Section Styles */
+.section-padding {
+  @apply py-24 px-6 md:px-12 lg:px-24;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Parallax and Motion */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reveal {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Responsive Grid */
+.grid-luxury {
+  @apply grid gap-8 md:gap-12 lg:gap-16;
+}
+
+#root {
+  min-height: 100vh;
+}
+
